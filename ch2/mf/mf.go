@@ -1,11 +1,11 @@
 // mf is change the factor to meter or feet
 package main
 
-import(
+import (
+	"awesomeProject1/ch2/heigthconv"
 	"fmt"
 	"os"
 	"strconv"
-	"awesomeProject1/ch2/heigthconv"
 )
 
 func main(){
