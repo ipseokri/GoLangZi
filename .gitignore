@@ -2,3 +2,5 @@
 *.exe
 *.svg
 *.gif
+*.mod
+*.sum
