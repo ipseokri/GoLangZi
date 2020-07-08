@@ -29,3 +29,5 @@ func Counter(w http.ResponseWriter, r * http.Request){
 	fmt.Fprintf(w, "Count %d\n", count)
 	mu.Unlock()
 }
+
+
