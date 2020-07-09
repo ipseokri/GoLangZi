@@ -6,14 +6,20 @@ import (
 	"log"
 	"net/http"
 	"sync"
+	"awesomeProject1/ch1/Animation_GIF"
 )
 
 var mu sync.Mutex
 var count int
 
+
 func main(){
-	http.HandleFunc("/", Handler)
 	http.HandleFunc("/count", Counter)
+	handler := func(w http.ResponseWriter, r *http.Request){
+		server.Lissajous(w)
+	}
+	http.HandleFunc("/", handler)
+
 	log.Fatal(http.ListenAndServe("localhost:8000", nil))
 }
 //Handler 는 요청된 URL의 Path 구성 요소를 반환한다.

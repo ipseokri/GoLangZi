@@ -1,4 +1,4 @@
-package main
+package server
 
 import (
 	"image"
@@ -7,7 +7,6 @@ import (
 	"io"
 	"math"
 	"math/rand"
-	"os"
 )
 
 var palette = []color.Color{color.Black , color.RGBA{244, 67, 54, 100} , color.RGBA{255,255,59, 100}, color.RGBA{205,220,57,100} }
@@ -17,11 +16,7 @@ const (
 	blackIndex = 1
 )
 
-func main(){
-	lissajous(os.Stdout)
-}
-
-func lissajous(out io.Writer) {
+func Lissajous(out io.Writer) {
 	const(
 		cycles = 5
 		res = 0.001

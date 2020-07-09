@@ -17,6 +17,7 @@ func handlerv3(w http.ResponseWriter, r * http.Request){
 	if err := r.ParseForm(); err != nil{
 		log.Print(err)
 	}
+
 	for k,v := range r.Form{
 		fmt.Fprintf(w, "Form[%q] = %q\n", k, v)
 	}
