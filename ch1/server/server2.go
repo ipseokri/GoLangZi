@@ -2,11 +2,11 @@
 package main
 
 import (
+	"awesomeProject1/ch1/Animation_GIF"
 	"fmt"
 	"log"
 	"net/http"
 	"sync"
-	"awesomeProject1/ch1/Animation_GIF"
 )
 
 var mu sync.Mutex
