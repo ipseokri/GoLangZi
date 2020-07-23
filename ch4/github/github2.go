@@ -11,7 +11,7 @@ import (
 //SearchIssues는 GitHub 이슈 트래커를 조회한다.
 func SearchIssues(terms []string) (*IssuesSearchResult, error){
 	q := url.QueryEscape(strings.Join(terms, " "))
-	resp, err := http.Get(IssuesURL + "?=q" + q)
+	resp, err := http.Get(IssuesURL + "?q=" + q)
 	if err != nil{
 		return nil, err
 	}
