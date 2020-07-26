@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/mjibson/goread/_third_party/golang.org/x/net/html"
+	"golang.org/x/net/html"
 	"os"
 )
 
