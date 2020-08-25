@@ -2,7 +2,7 @@
 package main
 
 import (
-	"awesomeProject1/ch2/tempconv"
+	"go_practice/ch2/tempconv"
 	"fmt"
 	"os"
 	"strconv"
